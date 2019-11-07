@@ -1,0 +1,388 @@
+blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+input, button {
+	border: 0;
+	outline: none;  /*取消轮廓边框*/
+}
+a {
+	text-decoration: none; /*取消下划线*/
+}
+@font-face {
+  font-family: 'icomoon';
+  src:  url('font/icomoon.eot?9zyalr');
+  src:  url('font/icomoon.eot?9zyalr#iefix') format('embedded-opentype'),
+    url('font/icomoon.ttf?9zyalr') format('truetype'),
+    url('font/icomoon.woff?9zyalr') format('woff'),
+    url('font/icomoon.svg?9zyalr#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+	font-family:myfont;
+	src:url(font/font2.ttf);
+}
+@font-face{
+	font-family:myfont1;
+	src:url(font/font3.ttf);/*../font/font3.ttf*/
+}
+body {
+	width:100%;
+	text-align:center;
+	background-color: #170017;
+}
+.fixed-r {
+	position: fixed;
+	z-index: 999;
+	top: 450px;
+	right: 10px;
+	background-color: #fff;
+}
+.fixed-r li {
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	border: 1px solid #ccc;
+	position: relative;
+	cursor: pointer;
+}
+.fixed-r i {
+	font-family: icomoon;
+	font-style: normal;
+	color: #170017;
+	font-size: 40px;
+}
+.fixed-r span {
+	display: none;
+	width: 120px;
+	position: absolute;
+	top: 0;
+	left: -120px;
+	color: #170017;
+	background-color: #fff;
+}
+.fixed-r li:hover {
+	background-color: #170017;
+}
+.fixed-r li:hover i {
+	color: #fff;
+}
+.fixed-r li:hover span {
+	display: block;
+}
+.container {
+	width: 100%;
+}
+.font1 {
+	font-family: myfont1;
+}
+.top {
+	overflow: hidden;
+}
+.logo {
+	height: 120px;
+	float: left;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+.top-r {
+	float: right;
+}
+.top-r img {
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: -1;
+}
+.search {
+	padding-top: 40px;
+	padding-right: 40px;
+}
+.search input {
+	width: 190px;
+	height: 30px;
+	padding-left: 10px;
+	border: 2px solid #170017;
+	float: left;
+}
+.search button {
+	height: 28px;
+	width: 40px;
+	background-color: #170017;
+	float: left;
+}
+.search button i {
+	font-family: "icomoon";
+	color: #fff;
+	font-style: normal;
+}
+.lbt {
+	overflow: hidden;
+}
+.pic {
+	width:52%;
+	float:left;
+	margin-left: 30px;
+	position: relative;
+}
+.pic ul{
+	width:140%;
+	height:400px; 
+	overflow:hidden;
+}
+.pic li {
+	list-style:none; 
+	padding:0; 
+	margin:0;
+	width:16.64%;
+	height:400px;
+	float:left;
+	transition-property:width;
+	transition-duration:1s;
+}
+.pic ul:hover li{
+	width:5.2%;
+}
+.pic ul li:hover{
+	width:52%;
+} 
+.recomment {
+	position: absolute;
+	top: 22%;
+	left: 0;
+	background:#EEE;
+	width:138%;
+	height:150px;
+	line-height: 150px;
+	font-size:90px;
+	color: #170017;
+	opacity: 0.6;
+	display: block;
+}
+.lbt-r {
+	position: relative;
+}
+.navi {
+	float: right;
+	width:10%;
+	height:325px;
+	margin-right: 35px;
+	background-color:#EEE;
+	text-align: right;
+	padding-top: 30px;
+	padding-right: 20px;
+	position: relative;
+	display: block;
+}
+.navi .gif {
+	position: absolute;
+	top: 30px;
+	left: -170px;
+}
+.navi ul {
+	float:right;
+}
+.navi li {
+	height: 60px;
+}
+.navi li a {
+	display: block;
+	width: 80px;
+	color: #170017;
+	font-family: myfont;
+	font-size: 18px;
+}
+.navi li a:hover {
+	background-color: #170017;
+	color: #fff;
+}
+.intro {
+	position: absolute;
+	top: 20px;
+	right: 0;
+	width: 450px;
+	height: 300px;
+	background-color: #170017;
+	float: right;
+	margin-right: 35px;
+	color: #fff;
+	display: none;
+}
+.intro form { 
+	display: none;
+	text-align:left; 
+	color:#FFF; 
+	font-size:25px; 
+	height:340px; 
+	padding-left:10px; 
+	background-color:#170017;
+	font-family: myfont;
+}
+.subject {
+	margin: 0 30px;
+	border:#CCF 25px solid;
+	overflow: hidden;
+	padding: 30px 4.5%;
+	position: relative;
+}
+.subject-t li {
+	margin: 15px;
+	width:17%;
+	height:280px;
+	float:left;
+	transition: all 0.2s;
+}
+.subject-t li:hover {
+	box-shadow: 0 10px 5px 5px rgba(200, 200, 200, 0.1);
+}
+.subject .circle ul {
+	height: 20px;
+	background-color: rgba(255, 255, 255, .3);
+	position: absolute;
+	left: 50%;
+	bottom: 10px;
+	transform: translateX(-50%);
+	border-radius: 10px;
+	padding-left: 8px;
+}
+.subject .circle li {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background-color: #fff;
+	float: left;
+	margin: 4px;
+	cursor: pointer; /*鼠标经过li的时候变成小手*/
+}
+.subject .circle .current {
+	background-color: #CCF;
+}
+.calendar {
+	margin: 15px 30px;
+	background-color: #ccf;
+	overflow: hidden;
+}
+.calendar-l {
+	float: left;
+	text-align: left;
+	margin: 20px 30px;
+}
+.calendar-l span {
+	font-size: 30px;
+	color:#170017;
+	font-family: myfont;
+	font-weight: 700;
+}
+.calendar-tab {
+	height: 340px;
+	background-color:#FFF;
+	border-top-left-radius:25px;
+	border-bottom-right-radius:25px;
+}
+.tab-header td:hover{
+    background-color:#170017;
+    color:#FFF;
+}
+.call td:hover{
+    background-color:#170017;
+    color:#FFF;
+}
+.calendar-r {
+	float: right;
+	width: 58%;
+	margin-top: 30px;
+	margin-right: 30px;
+}
+.calendar-r span {
+	float: left;
+	font-size: 18px;
+	font-family: myfont;
+}
+.movies {
+	height: 320px;
+	margin-top: 60px;
+}
+.movies li {
+	width:22%;
+	height:330px;
+	float: left;
+	margin-right: 29px;
+}
+.movies ul li:nth-child(4) {
+	margin-right: 0px;
+}
+.movies li a {
+	display: block;
+	margin-top: 15px;
+	transition: all 0.2s;
+}
+.movies li:hover a {
+	margin-top: 10px;
+	box-shadow: 0 10px 5px 5px rgba(0, 0, 0, .3);
+}
+.footer {
+	height: 400px;
+	margin: 50px 30px;
+}
+.assurances ul {
+	display: flex;
+	margin: 30px 100px;
+}
+.assurances li {
+	float: left;
+	flex: 1;
+	border : 2px solid #ccf;
+	margin: 0 50px; 
+	text-align: right;
+	padding: 20px 30px;
+	position: relative;
+}
+.assurances span {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+.assurances span i {
+	font-family: icomoon;
+	color: #fff;
+	font-style: normal;
+	font-size: 60px;
+}
+.assurances h4 {
+	height: 40px;
+	font-size: 24px;
+	color: #FFF;
+	line-height: 40px;
+}
+.assurances p {
+	color: #ccc;
+	font-size: 16px;
+	float: right;
+}
+.help {
+	height: 200px;
+	width: 900px;
+	margin: 20px auto;
+	box-sizing: border-box;
+	display: flex;
+}
+.help dl {
+	flex: 1;
+}
+.help dt {
+	font-size: 14px;
+	font-weight: 700;
+	color: #fff;
+}
+.help dd a {
+	font-size: 12px;
+	color: #ccc;
+}
+.help dd i {
+	font-family: icomoon;
+	color: #fff;
+	font-style: normal;
+}
